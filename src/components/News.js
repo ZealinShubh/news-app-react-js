@@ -22,7 +22,13 @@ export class News extends Component {
     }
   }
 
+  componentDidMount(){
+    let url = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=e2ffabb5f60b442d9800d17afdbf7251";
+    
+  }
+
   render() {
+    console.log("render");
     return (
       <div className='container my-3'>
         <h2>FactFinder Top Headlines</h2>
